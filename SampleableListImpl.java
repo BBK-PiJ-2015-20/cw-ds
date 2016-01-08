@@ -3,7 +3,7 @@
  * 
  * @author Ahla Arbid
  */
-public class SampleableListImpl extends LinkedList implements SampleableList{
+public class SampleableListImpl extends List implements SampleableList{
 	/**
 	 * Returns a list containing the first, third, fifth...
 	 * items of this list, or an empty list if the list is empty. 
