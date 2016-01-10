@@ -166,7 +166,7 @@ public class ObjectLauncher{
 	System.out.println("");
 	System.out.println("");
 	System.out.println("");
-	SampleableList list3 = new SampleableListImpl();
+	/**SampleableList list3 = new SampleableListImpl();
 	
 	System.out.println(list3.add("d1").getReturnValue());
 	System.out.println(list3.add("d2").getReturnValue());
@@ -197,7 +197,13 @@ public class ObjectLauncher{
 	System.out.println("");
 	System.out.println("");
 	System.out.println("");
-	
+	*/
+	ArrayList array5 = new ArrayList();
+		System.out.println(array5.isEmpty());
+		System.out.println(array5.size());
+		for (int i=0; i<1000000; i++)
+		array5.add(i);
+	System.out.println(array5.size());
 		
 	}
 }

@@ -6,7 +6,13 @@
 
  public class ImprovedStackImpl implements ImprovedStack{
 	
-		/**
+	private List stack;
+	
+	public ImprovedStackImpl(List list){
+		this.stack = list;
+	}
+	
+	/**
 	 * Returns a copy of this stack with the items reversed, the top
 	 * elements on the original stack is at the bottom of the new
 	 * stack and viceversa.

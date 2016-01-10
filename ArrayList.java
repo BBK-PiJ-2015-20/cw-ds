@@ -25,7 +25,7 @@
 	 */
 	protected Object[] array;
 	protected int array_size;
-	protected static final int max_size = 10000000;
+	protected static final int max_size = 1000000;
 
 	/**
 	*Constructor that creates an empty array with maximum capacity of 10 elements 
