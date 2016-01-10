@@ -166,7 +166,7 @@ public class ObjectLauncher{
 	System.out.println("");
 	System.out.println("");
 	System.out.println("");
-	/**SampleableList list3 = new SampleableListImpl();
+	SampleableList list3 = new SampleableListImpl();
 	
 	System.out.println(list3.add("d1").getReturnValue());
 	System.out.println(list3.add("d2").getReturnValue());
@@ -176,6 +176,7 @@ public class ObjectLauncher{
 	System.out.println(list3.sample().get(0).getReturnValue());
 	System.out.println(list3.sample().get(1).getReturnValue());
 	System.out.println(list3.sample().get(2).getReturnValue());
+	
 	System.out.println("");
 	System.out.println("");
 	System.out.println("");
@@ -197,13 +198,42 @@ public class ObjectLauncher{
 	System.out.println("");
 	System.out.println("");
 	System.out.println("");
-	*/
+	
 	ArrayList array5 = new ArrayList();
 		System.out.println(array5.isEmpty());
 		System.out.println(array5.size());
 		for (int i=0; i<1000000; i++)
 		array5.add(i);
 	System.out.println(array5.size());
-		
+	
+	System.out.println("");
+	System.out.println("");
+	System.out.println("");
+	
+	List array6 = new ArrayList();
+	for (int i = 0; i < 6; i++)
+		array6.add(i);
+		System.out.println(array6.size());
+		for (int j = 0; j < 6; j++)
+		System.out.println(array6.get(j).getReturnValue());
+	
+	ImprovedStack improvedStack = new ImprovedStackImpl(array6);
+	//improvedStack.remove("1");
+	System.out.println("test1");
+	/**for (int i = 0; i<6; i++)
+		System.out.println(improvedStack.pop().getReturnValue());
+	System.out.println("test2");
+	*/
+	ImprovedStack reversedStack = improvedStack.reverse();
+	for (int i = 0; i<array6.size(); i++)
+		System.out.println(reversedStack.pop().getReturnValue());
+	
+	System.out.println(array6.size());
+		for (int j = 0; j < 6; j++)
+		System.out.println(array6.get(j).getReturnValue());
+
+	for (int i = 0; i<array6.size(); i++)
+		System.out.println(improvedStack.pop().getReturnValue());
+	
 	}
 }
