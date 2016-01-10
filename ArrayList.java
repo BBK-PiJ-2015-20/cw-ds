@@ -25,7 +25,7 @@
 	 */
 	protected Object[] array;
 	protected int array_size;
-	protected static final int max_size = 1000000;
+	protected static final int max_size = 10000000;
 
 	/**
 	*Constructor that creates an empty array with maximum capacity of 10 elements 
@@ -131,12 +131,8 @@
 			 if ((index < 0) || (index > size()))
 				 return new ReturnObjectImpl(ErrorMessage.INDEX_OUT_OF_BOUNDS);
 			else {
-					if(size() == max_size){
-						Object[] biggerArray = new Object[size() * 2];
-						for (int i = 0; i < size(); i++){
-							biggerArray[i] = array[i];
-						}
-						array = biggerArray;
+					if(array_size == array.length - 1){
+						biggerArray();
 						array[size()] = item;
 						array_size++;
 						return new ReturnObjectImpl(ErrorMessage.NO_ERROR);		
@@ -165,6 +161,14 @@
 	 * @return an ReturnObject, empty if the operation is successful
 	 *         or containing an appropriate error message otherwise
 	 */
+	 
+	 public void biggerArray(){
+		 Object[] biggerArray = new Object[size() * 2];
+						for (int i = 0; i < size(); i++){
+							biggerArray[i] = array[i];
+						}
+						array = biggerArray;
+	 }
 	
 	public ReturnObject add(Object item){
 		return add(array_size, item);
