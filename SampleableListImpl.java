@@ -1,7 +1,7 @@
 /**
  * A sampleable list can be sampled. 
  * 
- * @author Ahla Arbid
+ * @author A A
  */
 public class SampleableListImpl extends ArrayList implements SampleableList{
 	/**

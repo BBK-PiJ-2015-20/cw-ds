@@ -2,7 +2,7 @@
  * A wrapper containing either an object (the result of an operation
  * on a data structure) or an error value.
  *
- * @author Ahla Arbid
+ * @author A A
  */
 public class ReturnObjectImpl implements ReturnObject {
 	private Object object;

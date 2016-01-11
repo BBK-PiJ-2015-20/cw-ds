@@ -1,6 +1,6 @@
 /**
  * an implementation of interface List based on pointers called LinkedList
- * @author Ahla Arbid
+ * @author A A
  */
  public class LinkedList implements List{
  

@@ -235,5 +235,6 @@ public class ObjectLauncher{
 	for (int i = 0; i<array6.size(); i++)
 		System.out.println(improvedStack.pop().getReturnValue());
 	
+		System.out.println(array5.get(12345).getReturnValue());
 	}
 }

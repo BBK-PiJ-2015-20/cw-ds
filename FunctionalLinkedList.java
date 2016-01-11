@@ -11,7 +11,7 @@
  * contain either an object or an error value of the right kind (as
  * defined in {@see ErrorMessage}).
  * 
- * @author Ahla Arbid
+ * @author A A
  */
  
  public class FunctionalLinkedList extends LinkedList implements FunctionalList{
